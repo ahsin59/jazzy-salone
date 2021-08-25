@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills,min,js"></script>
+</head>
+<style>
+      *{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+    text-align: center;
+}
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0cm 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition: transform .5s;
+
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.user info .fa{
+    margin-left: 10px;
+    color:#27c0ff;
+    font-size: 20px;
+}
+.user info small{
+    color:#009688;
+}
+.testimonial-col:hover{
+  transform: translateY(-7px)
+}
+@media screen  and (max-width:770px) {
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+   
+}
+
+#footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-row p{
+    line-height: 35px;
+}
+.footer-left .fa ,.footer-right .fa{
+    font-size: 20px;
+    color: #009688;
+    margin: 10px;
+}
+.footer-img{
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+.social-links{
+    text-align: center;
+}
+.social-links .fa{
+   height: 40px;
+   width: 40px;
+   font-size: 20px;
+   line-height: 40px;
+   border: 1px solid #009688;
+   margin: 40px 5px 0;
+   color: #009688;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.social-links .fa:hover{
+  background: #009688;
+  color: #fff;
+  transform: translateY(-7px);
+}
+.social-links p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+@media screen and(max-width:770px) {
+    .footer-left,.footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+    .footer-img{
+        top: 25%;
+    }
+}
+</style>
+<body>
+    <div class="container-fluid">
+        <section id="banner">
+            <img src="img/logo.png" class="logo">
+            <div class="banner-text">
+                <h1>JAZZY SALONE</h1>
+                <p>Style your hair Is style your Life</p>
+            </div>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+         </section>
+         <div id="sideNav">
+           <nav>
+               <ul>
+                   <li><a href="#banner">Home</a></li>
+                   <li><a href="#features">Features</a></li>
+                   <li><a href="#service">Services</a></li>
+                   <li><a href="#testimonail">Testimonials</a></li>
+                   <li><a href="#footer">Contact Us</a></li>
+               </ul>
+           </nav>
+         </div>
+         <div id="menuBtn">
+             <img src="img/menu.png" id="menu">
+         </div>
+        </section>
+        <section id="feature">
+            <div class="title-text">
+                <p>FEATURES</p>
+                <h1>Why Choose Us</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1>Experienced Staff</h1>
+                 
+                    <div class="features-desc">
+                        <div class="feature-icon">
+                          <i class="fa fa-shield e fa-2x"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>Kashmir Baraber provide excellent staff hardwworking intellegent 
+                                honest and deligated to their work excellent customer service
+                            </p>
+                        </div>
+                    </div>
+                    <br>                 
+                     <h1>Pre Booking over the phone</h1>
+                   
+                      <div class="features-desc">
+                          <div class="feature-icon">
+                              <i class="fa fa-phone fa-2x"></i>
+                          </div>
+                          <div class="feature-text">
+                              <p>Kashmir Baraber provide customer pre booking over the phone
+                                  specailly new born baby first hair cutting etc
+                              </p>
+                          </div>
+                      </div>
+                      <br>                  
+                      <h1>Affordable price</h1>
+                      
+                        <div class="features-desc">
+                            <div class="feature-icon">
+                              <i class="fa fa-money fa-2x"></i>
+                            </div>
+                            <div class="feature-text">
+                                <p>Kashmir Baraber provide excellent staff hardwworking intellegent 
+                                    honest and deligated to their work excellent customer service
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                <div class="features-img">
+                    <img src="img/barber-man.jpg">
+                </div>
+            </div>
+        </section>
+        <section id="service">
+            <div class="title-text">
+                <p>SERVICES</p>
+                <h1>We Provide better</h1>
+            </div>
+              <div class="service-box">
+                 <div class="single-service">
+                    <img src="img/pic-1.jpg">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                      <h3>Hair Styling</h3>
+                      <hr>
+                      <p>this text is descraption under the barber foundation
+                          this text is descraption under the barber foundation
+                          this text is descraption under the barber foundation</p>
+                  </div>
+                  </div>
+                 <div class="single-service">
+                  <img src="img/pic-2.jpg">
+                  <div class="overlay"></div>
+                  <div class="service-desc">
+                      <h3>Beared Triming</h3>
+                      <hr>
+                      <p>this text is descraption under the barber foundation
+                          this text is descraption under the barber foundation
+                          this text is descraption under the barber foundation</p>
+                  </div>
+                  </div>
+                 <div class="single-service">
+                  <img src="img/pic-3.jpg">
+                  <div class="overlay"></div>
+                  <div class="service-desc">
+                      <h3>Hair cut</h3>
+                      <hr>
+                      <p>this text is descraption under the barber foundation
+                          this text is descraption under the barber foundation
+                          this text is descraption under the barber foundation</p>
+                  </div>
+                  </div>
+                 <div class="single-service">
+                      <img src="img/pic-4.jpg">          
+                      <div class="overlay"></div>  
+                      <div class="service-desc">
+                      <h3>Drying shampo</h3>
+                      <hr>
+                      <p>this text is descraption under the barber foundation
+                          this text is descraption under the barber foundation
+                          this text is descraption under the barber foundation</p>
+                  </div>       
+                  </div>
+           </div>
+        </section>
+        <section id="testimonial">
+            <div class="title-text">
+                  <p>TESTIMONAILS</p>
+                  <h1>What Client Says</h1>
+              </div>
+                <div class="testimonial-row">
+                    <div class="testimonial-col">
+                        <div class="user">
+                          <img src="img/img-1.jpg">
+                          <div class="user-info">
+                            <h4>JOHN SMITH</h4>
+                            <i class="fa fa-twitter fa-2x"></i>
+                            <small>@johnsmith</small>
+                         </div>
+                        </div>
+                      <p>In promotion and advertising, a testimonial or show consists of a person's 
+                        written or spoken statement extolling the virtue of a product. 
+                        </p>
+                    </div> 
+                    
+                   
+                    <div class="testimonial-col">
+                        <div class="user">
+                          <img src="img/img-2.jpg">
+                          <div class="user-info">
+                            <h4>MONA LISA</h4>
+                            <i class="fa fa-twitter fa-2x"></i>
+                            <small>@monalisa</small>
+                         </div>
+                        </div>
+                        <p>In promotion and advertising, a testimonial or show consists of a person's 
+                        written or spoken statement extolling the virtue of a product. 
+                        </p>
+                    </div>
+                
+                    <div class="testimonial-col">
+                        <div class="user">
+                          <img src="img/img-3.jpg">
+                          <div class="user-info">
+                            <h4>RICKY DANIEL</h4>
+                            <i class="fa fa-twitter fa-2x"></i>
+                            <small>@rickydaniel</small>
+                         </div>
+                        </div>
+                        <p>In promotion and advertising, a testimonial or show consists of a person's 
+                        written or spoken statement extolling the virtue of a product. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+             
+            </section>
+            <section id="footer">
+                <img src="img/footer-img.png" class="footer-img">
+                 <div class="title-text">
+                    <P>CONTACT</P>
+                    <h1>Visit in shop today</h1>
+                    </div>
+                 <div class="footer-row">
+                    <div class="footer-left">
+                        <h1>Opening Hours</h1>
+                        <p><i class="fa fa-clock-o"></i>Monday to Friday 10am to 10pm</p>
+                        <p><i class="fa fa-clock-o"></i>MSaturday-Sunday 12am to 11pm</p>
+                    </div>
+                    <div class="footer-right">
+                        <h1>Grt in Touch</h1>
+                        <p>M123  city abc coutary xyz<i class="fa fa-map-marker"></i></p>
+                        <p>@website.com<<i class="fa fa-paper-plane"></i></p>
+                        <p>012 345 6789<<i class="fa fa-phone"></i></p>
+                        
+                    </div>
+                </div>
+                <div class="social-links">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube-play"></i>
+                <p>Copyright A9 Technology</p>
+                </div>
+                </section>
+                  
+                   
+       
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function(){
+            if (sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "img/close.png";
+            }
+            else{
+                sideNav.style.right ="-250px"
+                menu.src = "img/menu.png";
+            }
+        }
+
+    </script>
+</body>
+</html>
